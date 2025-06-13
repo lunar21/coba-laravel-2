@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Profile</title>
-</head>
-<body>
+@extends('layouts.main')
+
+@section('title', 'Profile')
+
+@section('content')
     <h2>Profil Pengguna</h2>
     <ul>
         <li>Nama: {{ $data['nama'] }}</li>
@@ -17,5 +16,4 @@
             </ul>
         </li>
     </ul>
-</body>
-</html>
+@endsection

@@ -16,3 +16,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [HomeController::class, 'about']);
 
 Route::get('/profile', [ProfileController::class, 'show']);
+
+Route::get('/about', function () {
+    return view('about');
+});
